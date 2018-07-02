@@ -1,0 +1,13 @@
+<h2 class="page-header">Print Patient's Report</h2>
+{{#if errors}}
+      {{#each errors}}
+        <div class="alert alert-danger">{{msg}}</div>
+      {{/each}}
+{{/if}}
+<form method="post" >
+  <div class="form-group">
+    <label>Enter Patient's id</label>
+    <input type="text" class="form-control" placeholder="Patient's Id" name="pid">
+  </div>
+	<button type="submit" class="btn btn-default">Submit</button>
+</form>

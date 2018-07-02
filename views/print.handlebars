@@ -1,0 +1,75 @@
+<h2 class="page-header">Report</h2>
+{{#if errors}}
+      {{#each errors}}
+        <div class="alert alert-danger">{{msg}}</div>
+      {{/each}}
+{{/if}}
+{{#if info}}
+        <div class="container">
+		<table>
+			{{#each info}}
+					<tr>
+						<td>Patient Id:</td>
+						<td>{{this.pid}}</td>
+					</tr>
+						<td>Age:</td>
+						<td>{{this.AGE}}</td>
+					<tr>
+						<td>Trimester:</td>
+						<td>{{this.TRIMESTER}}</td>
+					</tr>
+					<tr>
+						<td>Weight:</td>
+						<td>{{this.WEIGHT}}</td>
+					</tr>
+					<tr>
+						<td>Temperature:</td>
+						<td>{{this.TEMPERATURE}}</td>
+					</tr>
+					<tr>
+						<td>Pulse:</td>
+						<td>{{this.PULSE}}</td>
+					</tr>
+					<tr>
+						<td>Bp Systolic:</td>
+						<td>{{this.BP_SYSTOLIC}}</td>
+					</tr>
+					<tr>
+						<td>Bp Diastolic:</td>
+						<td>{{this.BP_DIASTOLIC}}</td>
+					</tr>
+					<tr>
+						<td>Hemoglobin:</td>
+						<td>{{this.HB}}</td>
+					</tr>
+					<tr>
+						<td>Blood Sugar:</td>
+						<td>{{this.BL_SUGAR}}</td>
+					</tr>
+					<tr>
+						<td>Thyroid Profile:</td>
+						<td>{{this.TSH}}</td>
+					</tr>
+					<tr>
+						<td>USG:</td>
+						<td>{{this.USG}}</td>
+					</tr>
+					<tr>
+						<td>Predicted Mode of Delivery:</td>
+						<td>{{this.MODE_OF_DELIVERY}}</td>
+					</tr>
+					<tr>
+						<td>Predicted Complications:</td>
+						<td>{{this.COMPLICATIONS}}</td>
+					</tr>
+					<tr>
+						<td>Treatment Advised:</td>
+						<td>{{this.TREATMENT}}</td>
+					</tr>
+				{{/each}}
+			</table>
+			<br>
+			<br>
+			<button  onclick="window.print()">Print</button> 
+		</div>
+{{/if}}

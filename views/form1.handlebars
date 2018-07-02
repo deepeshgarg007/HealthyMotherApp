@@ -1,0 +1,316 @@
+<h2 class="page-header">Enter Patient's Data</h2>
+{{#if errors}}
+      {{#each errors}}
+        <div class="alert alert-danger">{{msg}}</div>
+      {{/each}}
+{{/if}}
+<form method="post" >
+
+
+	<div class = "row">
+  <div class="column">
+  <div class="form-group">
+    <label>Enter Patient's id</label>
+    <input type="text" class="form-control" placeholder="Patient's Id" name="pid">
+  </div>
+  <div class="form-group">
+    <label>Enter Patient's AGE</label>
+    <input type="number" step="any" class="form-control" placeholder="Patient's Age" name="AGE" required>
+  </div>
+   <div class="form-group">
+    <label>TRIMESTER</label>
+    <input type="number" step="any" class="form-control" placeholder="TRIMESTER" name="TRIMESTER" required>
+  </div>
+  </div>
+  
+  <div class="column">
+   <div class="form-group">
+    <label>WEIGHT</label>
+    <input type="number" step="any" class="form-control" placeholder="WEIGHT" name="WEIGHT" required>
+  </div>
+  <div class="form-group">
+    <label>No. Of Pregnancies</label>
+    <input type="number" step="any" class="form-control" placeholder="Patient's no. of Pregnancies" name="NO_OF_PREGNANCIES" required>
+  </div>
+   <div class="form-group">
+    <label>No. of Abortions</label>
+    <input type="number" step="any" class="form-control" placeholder="Patient's no. abortions" name="NO_OF_ABORTIONS" required>
+  </div>
+  </div>
+  </div>
+  
+  
+  
+  
+  <div class = "row">
+  <div class="column">
+  <div class="form-group">
+    <label>Contracted Pelvis</label>
+	<br>
+	<label class="radio-inline"><input type="radio" name="CONTRACTED_PELVIS" value="1" >Yes</label>
+    <label class="radio-inline"><input type="radio" name="CONTRACTED_PELVIS" value="0" checked>No</label>
+  </div>
+  <div class="form-group">
+    <label>Previous LSCS</label>
+	<br>
+	<label class="radio-inline"><input type="radio" name="PREVIOUS_LSCS" value="1">Yes</label>
+    <label class="radio-inline"><input type="radio" name="PREVIOUS_LSCS" value="0" checked>No</label>
+  </div>
+  <div class="form-group">
+    <label>Ammenorrhoea</label>
+	<br>
+	<label class="radio-inline"><input type="radio" name="AMMENORRHOEA" value="1">Yes</label>
+    <label class="radio-inline"><input type="radio" name="AMMENORRHOEA" value="0" checked>No</label>
+  </div>
+  <div class="form-group">
+    <label>Vomitting</label>
+	<br>
+	<label class="radio-inline"><input type="radio" name="VOMITTING" value="1">Yes</label>
+    <label class="radio-inline"><input type="radio" name="VOMITTING" value="0" checked>No</label>
+  </div>
+  <div class="form-group">
+    <label>Weakness</label>
+	<br>
+	<label class="radio-inline"><input type="radio" name="WEAKNESS" value="1">Yes</label>
+    <label class="radio-inline"><input type="radio" name="WEAKNESS" value="0" checked>No</label>
+  </div>
+  <div class="form-group">
+    <label>Pain In Abdomen</label>
+	<br>
+	<label class="radio-inline"><input type="radio" name="PAIN_IN_ABDOMEN" value="1">Yes</label>
+    <label class="radio-inline"><input type="radio" name="PAIN_IN_ABDOMEN" value="0" checked>No</label>
+  </div>
+  <div class="form-group">
+    <label>Oedema Feet</label>
+	<br>
+	<label class="radio-inline"><input type="radio" name="OEDEMA_FEET" value="1">Yes</label>
+    <label class="radio-inline"><input type="radio" name="OEDEMA_FEET" value="0" checked>No</label>
+  </div>
+  <div class="form-group">
+    <label>Lethargy</label>
+	<br>
+	<label class="radio-inline"><input type="radio" name="LATHERGY" value="1">Yes</label>
+    <label class="radio-inline"><input type="radio" name="LATHERGY" value="0" checked>No</label>
+  </div>
+  <div class="form-group">
+    <label>Spotting Pv</label>
+	<br>
+	<label class="radio-inline"><input type="radio" name="SPOTTING_PV" value="1">Yes</label>
+    <label class="radio-inline"><input type="radio" name="SPOTTING_PV" value="0" checked>No</label>
+  </div>
+  </div>
+  
+  
+  
+  
+  <div class="column">
+  <div class="form-group">
+    <label>HEADACHE</label>
+	<br>
+	<label class="radio-inline"><input type="radio" name="HEADACHE" value="1">Yes</label>
+    <label class="radio-inline"><input type="radio" name="HEADACHE" value="0" checked>No</label>
+  </div>
+  <div class="form-group">
+    <label>Leg Cramps</label>
+	<br>
+	<label class="radio-inline"><input type="radio" name="LEG_CRAMPS" value="1">Yes</label>
+    <label class="radio-inline"><input type="radio" name="LEG_CRAMPS" value="0" checked>No</label>
+  </div>
+  <div class="form-group">
+    <label>Burning In Micturation</label>
+	<br>
+	<label class="radio-inline"><input type="radio" name="BURNING_IN_MICTURATION" value="1">Yes</label>
+    <label class="radio-inline"><input type="radio" name="BURNING_IN_MICTURATION" value="0" checked>No</label>
+  </div>
+  <div class="form-group">
+    <label>Pedal And Abdominal Wall Oedema</label>
+	<br>
+	<label class="radio-inline"><input type="radio" name="PEDAL_AND_ABDOMINAL_WALL_OEDEMA" value="1">Yes</label>
+    <label class="radio-inline"><input type="radio" name="PEDAL_AND_ABDOMINAL_WALL_OEDEMA" value="0" checked>No</label>
+  </div>
+  <div class="form-group">
+    <label>History Of Gestational DM</label>
+	<br>
+	<label class="radio-inline"><input type="radio" name="HISTORY_OF_GESTATIONAL_DM" value="1">Yes</label>
+    <label class="radio-inline"><input type="radio" name="HISTORY_OF_GESTATIONAL_DM" value="0" checked>No</label>
+  </div>
+  <div class="form-group">
+    <label>History Of Hypertension</label>
+	<br>
+	<label class="radio-inline"><input type="radio" name="HISTORY_OF_HYPERTENSION" value="1">Yes</label>
+    <label class="radio-inline"><input type="radio" name="HISTORY_OF_HYPERTENSION" value="0" checked>No</label>
+  </div>
+  <div class="form-group">
+    <label>Leaking PV</label>
+	<br>
+	<label class="radio-inline"><input type="radio" name="LEAKING_PV" value="1">Yes</label>
+    <label class="radio-inline"><input type="radio" name="LEAKING_PV" value="0" checked>No</label>
+  </div>
+  <div class="form-group">
+    <label>Excessive Weight Gain</label>
+	<br>
+	<label class="radio-inline"><input type="radio" name="EXCESSIVE_WEIGHT_GAIN" value="1">Yes</label>
+    <label class="radio-inline"><input type="radio" name="EXCESSIVE_WEIGHT_GAIN" value="0" checked>No</label>
+  </div>
+  <div class="form-group">
+    <label>Fever With Cold And Cough</label>
+	<br>
+	<label class="radio-inline"><input type="radio" name="FEVER_WITH_COLD_AND_COUGH" value="1">Yes</label>
+    <label class="radio-inline"><input type="radio" name="FEVER_WITH_COLD_AND_COUGH" value="0" checked>No</label>
+  </div>
+  </div>
+  </div>
+  
+  <div class="form-group">
+    <label>Temperature</label>
+    <input type="number" step="any" class="form-control" placeholder="Temperature" name="TEMPERATURE" required>
+  </div>
+  <div class="form-group">
+    <label>PULSE</label>
+    <input type="number" step="any" class="form-control" placeholder="PULSE" name="PULSE" required>
+  </div>
+  <div class="form-group">
+    <label>Bp Systolic</label>
+    <input type="number" step="any" class="form-control" placeholder="Bp Systolic" name="BP_SYSTOLIC" required>
+  </div>
+  <div class="form-group">
+    <label>Bp Diastolic</label>
+    <input type="number" step="any" class="form-control" placeholder="Bp Diastolic" name="BP_DIASTOLIC" required>
+  </div>
+  <div class="form-group">
+    <label>Blood Group</label>
+    <br>
+	<label class="radio-inline"><input type="radio" name="BLOOD_GP" value="0">O-</label>
+    <label class="radio-inline"><input type="radio" name="BLOOD_GP" value="1" checked>O+</label>
+	<label class="radio-inline"><input type="radio" name="BLOOD_GP" value="2">A+</label>
+	<label class="radio-inline"><input type="radio" name="BLOOD_GP" value="3">B+</label>
+	<label class="radio-inline"><input type="radio" name="BLOOD_GP" value="4">AB+</label>
+	<label class="radio-inline"><input type="radio" name="BLOOD_GP" value="5">AB-</label>
+	<label class="radio-inline"><input type="radio" name="BLOOD_GP" value="6">A-</label>
+	<label class="radio-inline"><input type="radio" name="BLOOD_GP" value="7">B-</label>
+  </div>
+  <div class="form-group">
+    <label>Hemoglobin</label>
+    <input type="number" step="any" class="form-control" placeholder="Hemoglobin" name="HB" required>
+  </div>
+  <div class="form-group">
+    <label>Blood Sugar</label>
+    <input type="number" step="any" class="form-control" placeholder="Blood Sugar" name="BL_SUGAR" required>
+  </div>
+  <div class="form-group">
+    <label>Thyroid Profile</label>
+    <input type="number" step="any" class="form-control" placeholder="Thyroid Profile" name="TSH" required>
+  </div>
+  <div class="form-group">
+    <label>Urine Profile</label>
+     <br>
+	 <label class="radio-inline"><input type="radio" name="URINE" value="0" checked>NAD</label>
+	 <label class="radio-inline"><input type="radio" name="URINE" value="1">PROTEIN+</label>
+	 <label class="radio-inline"><input type="radio" name="URINE" value="2">PROTEIN++</label>
+	 <label class="radio-inline"><input type="radio" name="URINE" value="3">PROTEIN+++</label>
+	 <label class="radio-inline"><input type="radio" name="URINE" value="4">PROTEIN++++</label>
+	 <label class="radio-inline"><input type="radio" name="URINE" value="5">KETONES+</label>
+	 <label class="radio-inline"><input type="radio" name="URINE" value="6">KETONES++</label>
+	 <label class="radio-inline"><input type="radio" name="URINE" value="7">KETONES+++</label>
+	 <label class="radio-inline"><input type="radio" name="URINE" value="8">KETONES++++</label>
+	 <label class="radio-inline"><input type="radio" name="URINE" value="9">KETONES_NIL</label>
+	 <label class="radio-inline"><input type="radio" name="URINE" value="10">ALBUMIN++</label>
+	 <label class="radio-inline"><input type="radio" name="URINE" value="11">BACTERIA+</label>
+  </div>
+  <div class="form-group">
+    <label>LIE</label>
+	<br>
+	<label class="radio-inline"><input type="radio" name="LIE" value="0" checked>Normal</label>
+    <label class="radio-inline"><input type="radio" name="LIE" value="1">Transverse</label>
+	<label class="radio-inline"><input type="radio" name="LIE" value="2">Oblique</label>
+  </div>
+  <div class="form-group">
+    <label>USG</label>
+    <input type="number" step="any" class="form-control" placeholder="USG" name="USG" required>
+  </div>
+  <div class="form-group">
+    <label>Amniotic Fluid</label>
+	<br>
+	<label class="radio-inline"><input type="radio" name="AMNIOTIC_FLUID" value="0" checked>Normal</label>
+    <label class="radio-inline"><input type="radio" name="AMNIOTIC_FLUID" value="1">Low</label>
+	<label class="radio-inline"><input type="radio" name="AMNIOTIC_FLUID" value="2">High</label>
+  </div>
+  <div class="form-group">
+    <label>Mode Of Delivery</label>
+	<br>
+	<label class="radio-inline"><input type="radio" name="MODE_OF_DELIVERY" value="0" checked>Full Term Normal Delivery</label>
+    <label class="radio-inline"><input type="radio" name="MODE_OF_DELIVERY" value="1">Pre Term Normal Delivery</label>
+	<label class="radio-inline"><input type="radio" name="MODE_OF_DELIVERY" value="2">Lower Section Ceserian Section</label>
+	<label class="radio-inline"><input type="radio" name="MODE_OF_DELIVERY" value="3">Full Term Ceserian Section</label>
+  </div>
+  <div class="form-group">
+    <label>COMPLICATIONS</label>
+	<br>
+	<select class="form-control" name="COMPLICATIONS">
+	<label><option value="0">No Complications So Far</option></label>
+    <label><option value="1">Case Of Anemia</option></label>
+	<label><option value="2">Threatened Abortion</option></label>
+	<label><option value="3">Case Of Pregnancy Induced Hypertension</option></label>
+	<label><option value="4" checked>IUGR</option></label>
+    <label><option value="5">Oligo-hydromnious</option></label>
+	<label><option value="6">Fetal distress</option></label>
+	<label><option value="7">Bad Obstretic History</option></label>
+	<label><option value="8" checked>Case Of Contracted Pelvis</option></label>
+    <label><option value="9">Case Of Hypermesis Gravidarum</option></label>
+	<label><option value="10">Case Of Cephalopelvic Disproportion</option></label>
+	<label><option value="11">Transverse Presentation</option></label>
+	<label><option value="12">Outlet Obstruction</option></label>
+	<label><option value="13">RH negative BG</option></label>
+	<label><option value="14">Bicornuate Uterus</option></label>
+	<label><option value="15">Impending Eclampsia</option></label>
+	<label><option value="16">Threatened abortion with bad obstretic history</option></label>
+	<label><option value="17">Pregnancy Induced Hypertension (PIH) with IUGR and Oligo-hydromnious</option></label>
+	<label><option value="18">Oligo-hydromnious with fetal distress</option></label>
+	<label><option value="19">PIH,Impending Eclampsia,IUGR,Oligo-hydromnious</option></label>
+	<label><option value="20">Diabetes Mellitus with cephalopelvic disproportion with poly-hydromnious</option></label>
+	<label><option value="21">Urinary tract Infection</option></label>
+	<label><option value="22">Case of bad obstretic history with hypothyroidism</option></label>
+	<label><option value="23">Case of hypothyroidism</option></label>
+	<label><option value="24">Upper respiratory-tract infection</option></label>
+	</select>
+  </div>
+  <div class="form-group">
+    <label>TREATMENT GIVEN</label>
+	<br>
+	<select class="form-control" name="TREATMENT">
+	<label><option value="0" checked>No Treatment As Of Now Needed</option></label>
+    <label><option value="1">Folic Acid, Antiemetic</option></label>
+	<label><option value="2">Iron, Calcium</option></label>
+	<label><option value="3">Folic Acid, Iron, Calcium, Protein Supplements</option></label>
+	<label><option value="4">Folic Acid, Iron, Calcium</option></label>
+    <label><option value="5">Folic Acid, Diet Advice</option></label>
+	<label><option value="6">Injectable iron, Calcium, Protein</option></label>
+	<label><option value="7">Injection Progesterone weekly, Folic Acid</option></label>
+	<label><option value="8">Iron, Calcium, Smooth Muscle Relexant</option></label>
+    <label><option value="9">Folic Acid</label>
+	<label><option value="10">Rest, Anti-anxiety Medication, iron, calcium</option></label>
+	<label><option value="11">Anti-hypertensive</option></label>
+	<label><option value="12">Need to be Admitted</option></label>
+	<label><option value="13">IV, Glucose, Protein Supplement</option></label>
+	<label><option value="14">Admitted, Anti-Hypertensive</option></label>
+	<label><option value="15">Folic Acid, Injectable iron, Calcium, Protein</option></label>
+    <label><option value="16">Os Tightening, Rest, Smooth Muscle Relaxant, Injection Progesterone</option></label>
+	<label><option value="17">Iron,calcium,protein</option></label>
+	<label><option value="18">Folic acid,antiemetic,IV fluids</option></label>
+	<label><option value="19">Iron,Calcium,protein,thyroxine</option></label>
+    <label><option value="20">Iron,Calcium,protein,dietary advice</option></label>
+	<label><option value="21">Iron,Calcium,protein,anti diabetic medicine</option></label>
+	<label><option value="22">Started injectable anti-diabetic</option></label>
+	<label><option value="23">Antibiotics,antihistaminics,folic acid</option></label>
+	<label><option value="24">Rest,Smooth muscle relaxant,injection progesterone</option></label>
+	<label><option value="25">Folic acid,iron,calcium,IV protein,10% dextrose infusion</option></label>
+	<label><option value="26">Rest,Folic Acid,iron,calcium,protein,Smooth muscle relaxant,injectable progesterone</option></label>
+	<label><option value="27">Folic acid,iron,calcium,IV protein,10% dextrose infusion,antihypertensive</option></label>
+	<label><option value="28">Rest,anti-anxiety,iron,calcium</option></label>
+	<label><option value="29">Plenty of oral fluids,alkalizers,antibiotics,iron,calcium</option></label>
+	<label><option value="30">Rest,Smooth muscle relaxant,injection progesterone,thyroxine</option></label>
+	<label><option value="31">rest,injection progesterone weekly,folic acid</option></label>
+	</select>
+  </div>
+  <button type="submit" class="btn btn-default">Submit</button>
+</form>

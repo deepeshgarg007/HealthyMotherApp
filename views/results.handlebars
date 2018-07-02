@@ -1,0 +1,15 @@
+<h2 class="page-header">Results</h2>
+{{#if errors}}
+      {{#each errors}}
+        <div class="alert alert-danger">{{msg}}</div>
+      {{/each}}
+{{/if}}
+{{#if mode}}
+        <div class="alert alert-success"><p style="color:black"><b>Mode Of Delivery: <b></p>{{mode}}</div>
+{{/if}}
+{{#if comp}}
+        <div class="alert alert-success"><p style="color:black"><b>Complications: <b></p>{{comp}}</div>
+{{/if}}
+{{#if treat}}
+        <div class="alert alert-success"><p style="color:black"><b>Treatment Advice: <b></p>{{treat}}</div>
+{{/if}}

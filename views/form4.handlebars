@@ -1,0 +1,34 @@
+<h2 class="page-header">Enter Patient habits</h2>
+{{#if errors}}
+      {{#each errors}}
+        <div class="alert alert-danger">{{msg}}</div>
+      {{/each}}
+{{/if}}
+<form method="post" >
+  <div class="form-group">
+    <label>Enter age of mother in years</label>
+    <input type="text" class="form-control" placeholder="age" name="age">
+  </div>
+  <div class="form-group">
+    <label>Weight in Pounds at the Last Menstrual Period</label>
+    <input type="number" step="any" class="form-control" placeholder="weight_mother" name="weight_mother" required>
+  </div>
+   <div class="form-group">
+    <label>Smoking Status During Pregnancy (1 = Yes, 0 = No)</label>
+    <input type="number" step="any" class="form-control" placeholder="smoke_status" name="smoke_status" required>
+  </div>
+   <div class="form-group">
+    <label>History of Premature Labor (0 = None, 1 = Yes)</label>
+    <input type="number" step="any" class="form-control" placeholder="hist_premature_labor" name="hist_premature_labor" required>
+  </div>
+  <div class="form-group">
+    <label>History of Hypertension (1 = Yes, 0 = No)</label>
+    <input type="number" step="any" class="form-control" placeholder="history_hypertension" name="history_hypertension" required>
+  </div>
+   <div class="form-group">
+    <label>Presence of Uterine Irritability (1 = Yes, 0 = No)</label>
+    <input type="number" step="any" class="form-control" placeholder="uterine_irritablity" name="uterine_irritability" required>
+  </div>
+  
+  <button type="submit" class="btn btn-default">Submit</button>
+</form>
